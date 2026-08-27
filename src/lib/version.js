@@ -33,7 +33,8 @@ export function bumpVersion(input, releaseType) {
 
   switch (releaseType) {
     case 'major':
-      return formatVersion({ major: major + 1, minor: 0, patch: 0 })
+      //return formatVersion({ major: major + 1, minor: 0, patch: 0 })
+      return formatVersion({ major: major + 1, minor, patch })
     case 'minor':
       return formatVersion({ major, minor: minor + 1, patch: 0 })
     case 'patch':
